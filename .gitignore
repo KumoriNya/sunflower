@@ -1,3 +1,10 @@
+# Package locks
+**package-lock.json
+**node_modules
+# Frontend packages
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
