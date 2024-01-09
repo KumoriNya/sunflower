@@ -7,7 +7,7 @@ TODOs:
     1. Feature - Making sure when caption text corrects itself (from the server), update the displayed caption text as well
     2. Feature - Add functionality to know when the event stops to disconnect the websocket (Is this required?)
     3. Feature - Reconnect to the server when connection is unexpectedly shut down
-    4. Fix - Instead of chopping the caption by the unit of a word, update the caption by sentences (Upon displaying new sentence, remove the oldest displaying sentence)
+    4. Fix - Instead of chopping the caption by the unit of a word, update the caption by sentences (Upon displaying new sentence, remove the oldest displaying sentence) Potential solution: asking the server to include a message of "Sentence finished" to let the web know. Also instead of delivering one word at a time, deliver the whole on-going sentence instead, and the frontend adjust displayment accordingly.
 
 3. Host UI
     1. Feature - Keep only the most recent sentences (1 ~ 3?)
