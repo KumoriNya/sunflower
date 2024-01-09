@@ -1,14 +1,15 @@
 import React from "react";
 import Websocket from "websocket";
+import { same_device_url, local_area_network_url, server_url } from "./enviroments/environment.tsx";
 
 function HomePage () {
-    const [socket, setSocket] = React.useState<WebSocket|null>();
+    const [socket, setSocket] = React.useState<null|WebSocket>();
     const [content, setContent] = React.useState<string>("");
 
     React.useEffect(() => {
         // TOOD: find an unused socket to replace 8000
         console.log("Attempting to connect with socket")
-        const ws = new WebSocket('ws://124.150.73.239:8000')
+        const ws = new WebSocket(server_url)
         ws.onopen = () => {
             console.log('Connection opened')
         }
